@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IAT 410 — Game</title>
+
+    <link href="./src/output.css" rel="stylesheet">
+
+    <!-- Favicons (optional) -->
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+
+  <body class="min-h-screen bg-zinc-950 text-zinc-100 antialiased">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="index.html" class="font-semibold tracking-tight text-2xl lg:text-4xl">
+          IAT 410 — Team Site
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="hidden gap-8 md:flex text-sm">
+          <a href="index.html" class="text-zinc-300 lg:text-xl hover:text-white">Ally's Blog</a>
+          <a href="script.html" class="text-zinc-300 lg:text-xl hover:text-white">Ekam's Blog</a>
+          <a href="concepts.html" class="text-zinc-300 lg:text-xl hover:text-white">Eva's Blog</a>
+          <a href="storyboard.html" class="text-zinc-300 lg:text-xl hover:text-white">Ryan's Blog</a>
+          <a href="animatic.html" class="text-zinc-300 lg:text-xl hover:text-white">Victor's Blog</a>
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-800 hover:bg-zinc-900" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" class="h-5 w-5 text-zinc-200" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile drawer -->
+      <nav id="mobileMenu" class="hidden md:hidden border-t border-zinc-800">
+        <div class="mx-auto grid max-w-6xl gap-2 px-1 py-3 text-sm">
+          <a href="index.html" class="rounded-lg px-3 py-2 hover:bg-zinc-900">Ally's Blog</a>
+          <a href="script.html" class="rounded-lg px-3 py-2 hover:bg-zinc-900">Ekam's Blog</a>
+          <a href="concepts.html" class="rounded-lg px-3 py-2 hover:bg-zinc-900">Eva's Blog</a>
+          <a href="storyboard.html" class="rounded-lg px-3 py-2 hover:bg-zinc-900">Ryan's Blog</a>
+          <a href="animatic.html" class="rounded-lg px-3 py-2 hover:bg-zinc-900">Victor's Blog</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="mx-auto max-w-6xl px-4 py-8 md:py-12">
+      <!-- Team -->
+      <section aria-labelledby="team" class="mb-10">
+        <h1 id="team" class="text-2xl md:text-3xl font-semibold">Team</h1>
+
+        <ul class="mt-4 grid gap-2 text-zinc-200 text-lg">
+          <li>Ally Cui</li>
+          <li>Ekam Nijjar<!-- • <a class="text-sky-300 hover:underline" href="mailto:ekam@example.com">ekam@example.com</a> --></li>
+          <li>Eva Nguyen<!-- • <a class="text-sky-300 hover:underline" href="mailto:eva@example.com">eva@example.com</a> --></li>
+          <li>Ryan Kwan<!-- • <a class="text-sky-300 hover:underline" href="mailto:ryan@example.com">ryan@example.com</a> --></li>
+          <li>Victor Nguyen</li>
+        </ul>
+      </section>
+
+      <!-- Milestone Journals -->
+      <section aria-labelledby="blog" class="space-y-6">
+        <div class="flex items-center justify-between">
+          <h2 id="blog" class="text-xl md:text-2xl font-semibold">Milestone Journals</h2>
+          <!-- Example: add a future filter or RSS later -->
+          <!-- <button class="rounded-md border border-zinc-800 px-3 py-1.5 text-sm hover:bg-zinc-900">Filter</button> -->
+        </div>
+
+        <!-- Post template (duplicate as needed) -->
+        <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5">
+          <header class="flex flex-wrap items-baseline gap-2">
+            <h3 class="text-lg font-medium">Week 1 — Project Kickoff</h3>
+            <time class="text-xs text-zinc-400">Jan 10, 2026</time>
+          </header>
+          <div class="prose prose-invert prose-zinc mt-3 max-w-none">
+            <p>Initial concept discussions, genre selection, and moodboard. Assigned roles and gathered references.</p>
+            <ul>
+              <li>Decided on music-led structure and story concept.</li>
+              <li>Outlined script beats and character silhouettes.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Add more <article> blocks per week -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-800">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-zinc-400">
+        <p>© 2026 IAT 410 Team.</p>
+      </div>
+    </footer>
+
+    <!-- Minimal JS: mobile nav toggle -->
+    <script type="module">
+      const btn = document.getElementById('menuBtn')
+      const menu = document.getElementById('mobileMenu')
+      btn?.addEventListener('click', () => menu?.classList.toggle('hidden'))
+    </script>
+
+  </body>
+</html>
