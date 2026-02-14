@@ -60,6 +60,44 @@
 
         <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5">
           <header class="flex flex-wrap items-baseline gap-2">
+            <h3 class="text-lg font-medium">Week 3 — Refined Game Development Document</h3>
+            <time class="text-xs text-zinc-400">Feb 11, 2026</time>
+          </header>
+          <div class="prose prose-invert prose-zinc mt-3 max-w-none space-y-4">
+            <p>This milestone, our team made solid progress moving from concept into a playable experience. We further developed our core level design ideas by clarifying what kinds of challenges we wanted players to face, and how those challenges should evolve across a level. From there, we implemented these ideas directly in our Unity prototype, turning our early design thinking into real spaces that could be navigated, tested, and iterated on. Alongside the level work, we continued building out core mechanics and features in the prototype, including foundational systems like player respawning, which helped support faster testing and a more complete gameplay loop. Once these pieces were in place, we playtested the prototype and gathered feedback on clarity, pacing, and how the controls and mechanics felt in practice. The feedback gave us a clear direction for what to adjust next, and it reinforced the value of prototyping early since we were able to identify issues that would have been hard to predict on paper.
+</p>
+            <p>My main contributions during this milestone were split between design direction and implementation. On the design side, I helped our team stay focused on what we want the gameplay to look and feel like moment-to-moment, especially in terms of the core loop and cooperative structure. I suggested using “mutual dependency loops” as a guiding principle, meaning the game should repeatedly create situations where each player’s actions enable the other to progress, rather than one player leading while the other follows. This helped frame our puzzle and encounter design around true interdependence, and Eva created puzzle ideas that reflected this approach. On the development side, I further built out the Unity prototype by implementing the puzzles Eva designed and making them playable. I also added key features that supported both usability and iteration speed, such as a respawn system and UI elements that improve player feedback and make the prototype easier to understand during testing. These include a controls-explanation panel and buttons for the Maker to use for platform placement.
+</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 not-prose">
+              <figure class="m-0">
+                <img
+                  src="./assets/images/Core Loop Ideation.jpg"
+                  alt="My personal notes where I ideated on the core loop and how to create mutual dependency between the maker and mover roles"
+                  class="w-full aspect-video object-contain rounded-lg border border-zinc-800 bg-zinc-950/40 p-2"
+                />
+                <figcaption class="mt-2 text-sm text-zinc-400 text-center">
+                  Core loop ideation notes
+                </figcaption>
+              </figure>
+
+              <figure class="m-0">
+                <img
+                  src="./assets/images/colored-platforms.png"
+                  alt="Screenshot of our Unity prototype showing the core loop in action where the maker and mover must work together to get past obstacles"
+                  class="w-full aspect-video object-contain rounded-lg border border-zinc-800 bg-zinc-950/40 p-2"
+                />
+                <figcaption class="mt-2 text-sm text-zinc-400 text-center">
+                  Unity prototype showing the core loop in action
+                </figcaption>
+              </figure>
+            </div>
+            <p>From our playtesting, one standout issue was that the mover’s jump currently feels “floaty,” which affects the sense of control and responsiveness. The good part is that this is straightforward to address in Unity by tuning physics and movement values, such as gravity scaling, fall speed, and jump timing. In the next iteration, we can tighten the jump arc and falling behavior to create a more grounded and satisfying movement feel, then validate the improvement with another quick round of playtesting.
+</p>
+          </div>
+        </article>
+
+        <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5">
+          <header class="flex flex-wrap items-baseline gap-2">
             <h3 class="text-lg font-medium">Week 2 — Game Development Document V1</h3>
             <time class="text-xs text-zinc-400">Jan 28, 2026</time>
           </header>
