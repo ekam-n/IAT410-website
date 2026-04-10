@@ -16,7 +16,7 @@
     <header class="sticky top-0 z-40 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a href="index.html" class="font-semibold tracking-tight text-2xl lg:text-3xl">
-          Orange Goose — Game Site
+          Orange Goose
         </a>
 
         <!-- Desktop nav -->
@@ -61,23 +61,23 @@
         <!-- Post template (duplicate as needed) -->
         <article class="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5">
           <header class="flex flex-wrap items-baseline gap-2">
-            <h3 class="text-lg font-medium">Milestone 5 — Beta</h3>
-            <time class="text-xs text-zinc-400">Mar 24, 2026</time>
+            <h3 class="text-lg font-medium">Milestone 6 — Final</h3>
+            <time class="text-xs text-zinc-400">Apr 08, 2026</time>
           </header>
           <div class="prose prose-invert prose-zinc mt-3 max-w-none space-y-4">
-            <p>During this milestone, our team focused on developing the Beta version of the game by expanding our content and refining several core systems introduced in earlier iterations. A major accomplishment was the design and creation of the second level, which builds directly on the mechanics established in level one while increasing complexity and encouraging stronger coordination between the Maker and the Mover. The goal was to create a more engaging experience that challenges players to apply what they have learned in new ways, without making the difficulty feel overwhelming or unfair. In parallel with level design, we implemented a new interval-based reward system to improve player engagement throughout gameplay rather than relying solely on end-of-level feedback. We also introduced hotkeys for the Maker’s controls, making interactions faster and more intuitive, and added an anti-cheat stun feature to prevent players from exploiting unintended mechanics and bypassing designed challenges.
+            <p>This sprint marked the completion of the game's final level, bringing the full three-layer escape arc to life. With Level 3 now in place, players can experience the complete journey from the game world through the kernel and into the hardware itself. Alongside the new level, the team added level-specific backgrounds that give each layer its own distinct visual identity, reinforcing the sense that the Mover and Maker are descending into increasingly unfamiliar and hostile territory. Dialogue and dialogue boxes were polished throughout, giving the character exchanges a cleaner, more cohesive feel that fits the tone of the game. The audio landscape was also expanded with additional music and sound effects, helping each environment feel more alive and reactive. The team also addressed a number of bugs and made targeted tweaks to existing mechanics to tighten up the overall experience.
             </p>
-            <p>My contributions during this milestone were centered on both design input and system implementation. I helped inform the design of level two by thinking through how the pacing and difficulty should evolve from the first level, as well as how new challenges could be introduced in a way that still feels cohesive with the existing gameplay loop. A key part of my work was designing and implementing the new interval-based reward system. This system delivers variable anti-cheat dialogue at fixed intervals, providing players with consistent feedback as they progress through the level. The intention behind this was to reinforce player actions, maintain engagement, and integrate feedback more naturally into the gameplay experience. By tying the reward system to anti-cheat dialogue, it also supports the broader goal of guiding player behavior without making restrictions feel overly rigid.
+            <p>My primary contribution this sprint was writing and implementing all of the game's dialogue, as well as building the dialogue boxes that display it in-game. Getting the tone right was important — the exchanges between the Mover and Maker needed to feel punchy, funny, and character-driven without overstaying their welcome, so a lot of work went into keeping lines short and each beat landing cleanly. I also contributed to the development of Level 3, specifically working on camera zones, checkpoints, and integrating the dialogue into the level flow so that conversations feel tied to what the player is actually experiencing at each moment. On the mechanics side, I made several targeted tweaks where things felt off during playtesting. One notable change was making platforms delete themselves when they fall off screen, which addressed a performance issue and kept the play space from getting cluttered over time.
             </p>
-            <img src="./assets/images/lvl2.png" 
-              alt="Level design iteration for the second level in the beta build"
-              class="w-full max-w-4xl mx-auto rounded-lg border border-zinc-800"
-            >
-            <img src="./assets/images/AC-dialogue.png" 
+            <img src="./assets/images/dialogue-box.png" 
               alt="Dialogue system implementation"
               class="w-full max-w-4xl mx-auto rounded-lg border border-zinc-800"
             >
-            <p>Reflecting on this milestone, there are still several areas that need further refinement. The UI and level selector, while functional, still require additional polish to feel more cohesive and intuitive. Improving the visual clarity and organization of these elements will be important for creating a smoother player experience. Additionally, dialogue in level two has not yet been fully implemented, and the way it is currently delivered could be improved. Ideally, dialogue should feel more integrated into the gameplay rather than appearing as a separate or disruptive element. Continuing to refine how information is communicated to players, alongside further visual and system polish, will be an important focus moving into the next stage of development.
+            <img src="./assets/images/lvl3.png" 
+              alt="first stage of the third level in the final build with dialogue boxes implemented"
+              class="w-full max-w-4xl mx-auto rounded-lg border border-zinc-800"
+            >
+            <p>By the end of the course the team managed to track down and fix as many bugs as we could find, and I'm genuinely proud of where the game landed. That said, finishing a project rarely means running out of ideas — it usually means running out of time. There are a number of features I'd love to return to in the future. Game saves would make a meaningful difference to the player experience, as would locking levels until previous ones are completed to ensure players encounter the story in the right order. A single player mode feels like a natural expansion that would open the game up to a much wider audience. The dialogue delivery system is also something I'd want to revisit — cutscenes or a more cinematic approach could do a lot more justice to the writing than simple dialogue boxes. Finally, giving the Maker's platforms some actual sprites would go a long way toward making the mod menu feel more polished and intentional as a mechanic.
             </p>
           </div>
         </article>
